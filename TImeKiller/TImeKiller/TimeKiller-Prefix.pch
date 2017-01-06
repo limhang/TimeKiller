@@ -1,0 +1,47 @@
+//
+//  TimeKiller-Prefix.pch
+//  TimeKiller
+//
+//  Created by 李明航 on 16/10/8.
+//  Copyright © 2016年 李明航. All rights reserved.
+//
+
+#ifndef TimeKiller_Prefix_pch
+#define TimeKiller_Prefix_pch
+
+#import <Masonry/Masonry.h>
+#import "MBProgressHUD.h"
+
+#define kScreen_Height [UIScreen mainScreen].bounds.size.height
+#define kScreen_Width [UIScreen mainScreen].bounds.size.width
+
+
+//Globel Color
+#define KColorBackgroud [UIColor colorWithRed:236.0/255.0 green:236.0/255.0 blue:236.0/255.0 alpha:0.9]
+
+#define kDefaultLastId [NSNumber numberWithInteger:99999999]
+#define kColor999 [UIColor colorWithHexString:@"0x999999"]
+#define kColorTableBG [UIColor colorWithHexString:@"0xfafafa"]
+#define kColorTableSectionBg [UIColor colorWithHexString:@"0xeeeeee"]
+#define kColorBrandGreen [UIColor colorWithHexString:@"0x3bbc79"]
+#define kColorDDD [UIColor colorWithHexString:@"0xDDDDDD"]
+#define kColorNavBG [UIColor colorWithHexString:@"0xFAFAFA"]
+#define kColorNavTitle [UIColor colorWithHexString:@"0x323A45"]
+
+
+#ifdef DEBUG
+#define DLog(fmt, ...) NSLog((@"[文件名:%s]\n" "[函数名:%s]\n" "[行号:%d] \n" fmt), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
+#define DeBugLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#define NSLog(...) NSLog(__VA_ARGS__);
+#define MyNSLog(FORMAT, ...) fprintf(stderr,"[%s]:[line %d行] %s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else
+#define DLog(...)
+#define DeBugLog(...)
+#define NSLog(...)
+#define MyNSLog(FORMAT, ...) nil
+#endif
+
+
+#endif /* TimeKiller_Prefix_pch */
+
+

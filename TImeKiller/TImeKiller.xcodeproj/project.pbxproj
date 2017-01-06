@@ -1,0 +1,918 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE10BA331DA8C6EC00729076 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE10BA281DA8C6EC00729076 /* MeViewController.m */; };
+		EE10BA341DA8C6EC00729076 /* PlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE10BA2A1DA8C6EC00729076 /* PlanViewController.m */; };
+		EE10BA351DA8C6EC00729076 /* RemindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE10BA2C1DA8C6EC00729076 /* RemindViewController.m */; };
+		EE10BA361DA8C6EC00729076 /* RootTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE10BA2E1DA8C6EC00729076 /* RootTabViewController.m */; };
+		EE10BA371DA8C6EC00729076 /* TimeAnalysisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE10BA301DA8C6EC00729076 /* TimeAnalysisViewController.m */; };
+		EE10BA381DA8C6EC00729076 /* TimeManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE10BA321DA8C6EC00729076 /* TimeManagerViewController.m */; };
+		EE10BA471DA9D77600729076 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE10BA461DA9D77600729076 /* BaseNavigationController.m */; };
+		EE10BA4F1DA9E91B00729076 /* ManagerRunningCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE10BA4E1DA9E91B00729076 /* ManagerRunningCell.m */; };
+		EE10BA521DA9E93100729076 /* ManagerCompleteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE10BA511DA9E93100729076 /* ManagerCompleteCell.m */; };
+		EE10BA551DA9E95700729076 /* ManagerUndoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE10BA541DA9E95700729076 /* ManagerUndoCell.m */; };
+		EE1B8AA11DAB687D00FF3E79 /* ManagerTableViewHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1B8AA01DAB687D00FF3E79 /* ManagerTableViewHeadView.m */; };
+		EE1B8AA41DACD9AA00FF3E79 /* ManagerTimeTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1B8AA31DACD9AA00FF3E79 /* ManagerTimeTagView.m */; };
+		EE1B8AA71DACDF9000FF3E79 /* ManagerTimeTagCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1B8AA61DACDF9000FF3E79 /* ManagerTimeTagCollection.m */; };
+		EE1B8AAA1DACE40D00FF3E79 /* CcellManagerTag.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1B8AA91DACE40D00FF3E79 /* CcellManagerTag.m */; };
+		EE1B8AB21DAE188100FF3E79 /* FRDLivelyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1B8AAE1DAE188100FF3E79 /* FRDLivelyButton.m */; };
+		EE1B8AB31DAE188100FF3E79 /* KxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1B8AB11DAE188100FF3E79 /* KxMenu.m */; };
+		EE1B8ABD1DAE2AAE00FF3E79 /* AddPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1B8ABA1DAE2AAE00FF3E79 /* AddPlanViewController.m */; };
+		EE1B8AC71DAE37F100FF3E79 /* RemindCollectionViewCellOne.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1B8AC61DAE37F100FF3E79 /* RemindCollectionViewCellOne.m */; };
+		EEF01BA81DBDA7EB006CA20F /* NSBundle+TZImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF01B941DBDA7EB006CA20F /* NSBundle+TZImagePicker.m */; };
+		EEF01BA91DBDA7EB006CA20F /* TZAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF01B961DBDA7EB006CA20F /* TZAssetCell.m */; };
+		EEF01BAA1DBDA7EB006CA20F /* TZAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF01B981DBDA7EB006CA20F /* TZAssetModel.m */; };
+		EEF01BAB1DBDA7EB006CA20F /* TZImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF01B9A1DBDA7EB006CA20F /* TZImageManager.m */; };
+		EEF01BAC1DBDA7EB006CA20F /* TZImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EEF01B9B1DBDA7EB006CA20F /* TZImagePickerController.bundle */; };
+		EEF01BAD1DBDA7EB006CA20F /* TZImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF01B9D1DBDA7EB006CA20F /* TZImagePickerController.m */; };
+		EEF01BAE1DBDA7EB006CA20F /* TZPhotoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF01B9F1DBDA7EB006CA20F /* TZPhotoPickerController.m */; };
+		EEF01BAF1DBDA7EB006CA20F /* TZPhotoPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF01BA11DBDA7EB006CA20F /* TZPhotoPreviewCell.m */; };
+		EEF01BB01DBDA7EB006CA20F /* TZPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF01BA31DBDA7EB006CA20F /* TZPhotoPreviewController.m */; };
+		EEF01BB11DBDA7EB006CA20F /* TZVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF01BA51DBDA7EB006CA20F /* TZVideoPlayerController.m */; };
+		EEF01BB21DBDA7EB006CA20F /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF01BA71DBDA7EB006CA20F /* UIView+Layout.m */; };
+		EEF1FC3B1D991CF500C76963 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF1FC3A1D991CF500C76963 /* main.m */; };
+		EEF1FC3E1D991CF500C76963 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF1FC3D1D991CF500C76963 /* AppDelegate.m */; };
+		EEF1FC491D991CF500C76963 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEF1FC471D991CF500C76963 /* LaunchScreen.storyboard */; };
+		EEF1FC541D991CF500C76963 /* TimeKillerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF1FC531D991CF500C76963 /* TimeKillerTests.m */; };
+		EEF1FC5F1D991CF500C76963 /* TimeKillerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF1FC5E1D991CF500C76963 /* TimeKillerUITests.m */; };
+		EEF1FC6D1D99255100C76963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEF1FC6C1D99255100C76963 /* Assets.xcassets */; };
+		F99B071107581E8391580539 /* libPods-TimeKiller.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF34694B0558754BE04C75D6 /* libPods-TimeKiller.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EEF1FC501D991CF500C76963 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEF1FC2E1D991CF500C76963 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEF1FC351D991CF500C76963;
+			remoteInfo = TimeKiller;
+		};
+		EEF1FC5B1D991CF500C76963 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEF1FC2E1D991CF500C76963 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEF1FC351D991CF500C76963;
+			remoteInfo = TimeKiller;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D4CBD1CD591DDA609F5AA418 /* Pods-TimeKiller.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeKiller.release.xcconfig"; path = "Pods/Target Support Files/Pods-TimeKiller/Pods-TimeKiller.release.xcconfig"; sourceTree = "<group>"; };
+		EE10BA271DA8C6EC00729076 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
+		EE10BA281DA8C6EC00729076 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		EE10BA291DA8C6EC00729076 /* PlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanViewController.h; sourceTree = "<group>"; };
+		EE10BA2A1DA8C6EC00729076 /* PlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanViewController.m; sourceTree = "<group>"; };
+		EE10BA2B1DA8C6EC00729076 /* RemindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemindViewController.h; sourceTree = "<group>"; };
+		EE10BA2C1DA8C6EC00729076 /* RemindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemindViewController.m; sourceTree = "<group>"; };
+		EE10BA2D1DA8C6EC00729076 /* RootTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTabViewController.h; sourceTree = "<group>"; };
+		EE10BA2E1DA8C6EC00729076 /* RootTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTabViewController.m; sourceTree = "<group>"; };
+		EE10BA2F1DA8C6EC00729076 /* TimeAnalysisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeAnalysisViewController.h; sourceTree = "<group>"; };
+		EE10BA301DA8C6EC00729076 /* TimeAnalysisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeAnalysisViewController.m; sourceTree = "<group>"; };
+		EE10BA311DA8C6EC00729076 /* TimeManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeManagerViewController.h; sourceTree = "<group>"; };
+		EE10BA321DA8C6EC00729076 /* TimeManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeManagerViewController.m; sourceTree = "<group>"; };
+		EE10BA441DA8F72200729076 /* TimeKiller-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TimeKiller-Prefix.pch"; sourceTree = "<group>"; };
+		EE10BA451DA9D77600729076 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		EE10BA461DA9D77600729076 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		EE10BA4D1DA9E91B00729076 /* ManagerRunningCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerRunningCell.h; sourceTree = "<group>"; };
+		EE10BA4E1DA9E91B00729076 /* ManagerRunningCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerRunningCell.m; sourceTree = "<group>"; };
+		EE10BA501DA9E93100729076 /* ManagerCompleteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerCompleteCell.h; sourceTree = "<group>"; };
+		EE10BA511DA9E93100729076 /* ManagerCompleteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerCompleteCell.m; sourceTree = "<group>"; };
+		EE10BA531DA9E95700729076 /* ManagerUndoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerUndoCell.h; sourceTree = "<group>"; };
+		EE10BA541DA9E95700729076 /* ManagerUndoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerUndoCell.m; sourceTree = "<group>"; };
+		EE1B8A9F1DAB687D00FF3E79 /* ManagerTableViewHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ManagerTableViewHeadView.h; path = TimeKiller/ManagerVC/view/cell/ManagerTableViewHeadView.h; sourceTree = SOURCE_ROOT; };
+		EE1B8AA01DAB687D00FF3E79 /* ManagerTableViewHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ManagerTableViewHeadView.m; path = TimeKiller/ManagerVC/view/cell/ManagerTableViewHeadView.m; sourceTree = SOURCE_ROOT; };
+		EE1B8AA21DACD9AA00FF3E79 /* ManagerTimeTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ManagerTimeTagView.h; path = TimeKiller/ManagerVC/view/cell/ManagerTimeTagView.h; sourceTree = SOURCE_ROOT; };
+		EE1B8AA31DACD9AA00FF3E79 /* ManagerTimeTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ManagerTimeTagView.m; path = TimeKiller/ManagerVC/view/cell/ManagerTimeTagView.m; sourceTree = SOURCE_ROOT; };
+		EE1B8AA51DACDF9000FF3E79 /* ManagerTimeTagCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ManagerTimeTagCollection.h; path = TimeKiller/ManagerVC/view/cell/ManagerTimeTagCollection.h; sourceTree = SOURCE_ROOT; };
+		EE1B8AA61DACDF9000FF3E79 /* ManagerTimeTagCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ManagerTimeTagCollection.m; path = TimeKiller/ManagerVC/view/cell/ManagerTimeTagCollection.m; sourceTree = SOURCE_ROOT; };
+		EE1B8AA81DACE40D00FF3E79 /* CcellManagerTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CcellManagerTag.h; sourceTree = "<group>"; };
+		EE1B8AA91DACE40D00FF3E79 /* CcellManagerTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CcellManagerTag.m; sourceTree = "<group>"; };
+		EE1B8AAD1DAE188100FF3E79 /* FRDLivelyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRDLivelyButton.h; sourceTree = "<group>"; };
+		EE1B8AAE1DAE188100FF3E79 /* FRDLivelyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRDLivelyButton.m; sourceTree = "<group>"; };
+		EE1B8AB01DAE188100FF3E79 /* KxMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxMenu.h; sourceTree = "<group>"; };
+		EE1B8AB11DAE188100FF3E79 /* KxMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxMenu.m; sourceTree = "<group>"; };
+		EE1B8AB91DAE2AAE00FF3E79 /* AddPlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPlanViewController.h; sourceTree = "<group>"; };
+		EE1B8ABA1DAE2AAE00FF3E79 /* AddPlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPlanViewController.m; sourceTree = "<group>"; };
+		EE1B8AC51DAE37F100FF3E79 /* RemindCollectionViewCellOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemindCollectionViewCellOne.h; sourceTree = "<group>"; };
+		EE1B8AC61DAE37F100FF3E79 /* RemindCollectionViewCellOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemindCollectionViewCellOne.m; sourceTree = "<group>"; };
+		EEF01B931DBDA7EB006CA20F /* NSBundle+TZImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TZImagePicker.h"; sourceTree = "<group>"; };
+		EEF01B941DBDA7EB006CA20F /* NSBundle+TZImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TZImagePicker.m"; sourceTree = "<group>"; };
+		EEF01B951DBDA7EB006CA20F /* TZAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetCell.h; sourceTree = "<group>"; };
+		EEF01B961DBDA7EB006CA20F /* TZAssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZAssetCell.m; sourceTree = "<group>"; };
+		EEF01B971DBDA7EB006CA20F /* TZAssetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetModel.h; sourceTree = "<group>"; };
+		EEF01B981DBDA7EB006CA20F /* TZAssetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZAssetModel.m; sourceTree = "<group>"; };
+		EEF01B991DBDA7EB006CA20F /* TZImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImageManager.h; sourceTree = "<group>"; };
+		EEF01B9A1DBDA7EB006CA20F /* TZImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageManager.m; sourceTree = "<group>"; };
+		EEF01B9B1DBDA7EB006CA20F /* TZImagePickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TZImagePickerController.bundle; sourceTree = "<group>"; };
+		EEF01B9C1DBDA7EB006CA20F /* TZImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImagePickerController.h; sourceTree = "<group>"; };
+		EEF01B9D1DBDA7EB006CA20F /* TZImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImagePickerController.m; sourceTree = "<group>"; };
+		EEF01B9E1DBDA7EB006CA20F /* TZPhotoPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPickerController.h; sourceTree = "<group>"; };
+		EEF01B9F1DBDA7EB006CA20F /* TZPhotoPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPickerController.m; sourceTree = "<group>"; };
+		EEF01BA01DBDA7EB006CA20F /* TZPhotoPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewCell.h; sourceTree = "<group>"; };
+		EEF01BA11DBDA7EB006CA20F /* TZPhotoPreviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPreviewCell.m; sourceTree = "<group>"; };
+		EEF01BA21DBDA7EB006CA20F /* TZPhotoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewController.h; sourceTree = "<group>"; };
+		EEF01BA31DBDA7EB006CA20F /* TZPhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPreviewController.m; sourceTree = "<group>"; };
+		EEF01BA41DBDA7EB006CA20F /* TZVideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZVideoPlayerController.h; sourceTree = "<group>"; };
+		EEF01BA51DBDA7EB006CA20F /* TZVideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZVideoPlayerController.m; sourceTree = "<group>"; };
+		EEF01BA61DBDA7EB006CA20F /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		EEF01BA71DBDA7EB006CA20F /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		EEF1FC361D991CF500C76963 /* TimeKiller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeKiller.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEF1FC3A1D991CF500C76963 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EEF1FC3C1D991CF500C76963 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EEF1FC3D1D991CF500C76963 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EEF1FC481D991CF500C76963 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EEF1FC4A1D991CF500C76963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEF1FC4F1D991CF500C76963 /* TimeKillerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeKillerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEF1FC531D991CF500C76963 /* TimeKillerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeKillerTests.m; sourceTree = "<group>"; };
+		EEF1FC551D991CF500C76963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEF1FC5A1D991CF500C76963 /* TimeKillerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeKillerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEF1FC5E1D991CF500C76963 /* TimeKillerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeKillerUITests.m; sourceTree = "<group>"; };
+		EEF1FC601D991CF500C76963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEF1FC6C1D99255100C76963 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF34694B0558754BE04C75D6 /* libPods-TimeKiller.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TimeKiller.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC4C14478E83595056E04E22 /* Pods-TimeKiller.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeKiller.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeKiller/Pods-TimeKiller.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EEF1FC331D991CF500C76963 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F99B071107581E8391580539 /* libPods-TimeKiller.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEF1FC4C1D991CF500C76963 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEF1FC571D991CF500C76963 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88D589DF5F108CD578C2EF88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF34694B0558754BE04C75D6 /* libPods-TimeKiller.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4170AC158D4F2C255380526 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC4C14478E83595056E04E22 /* Pods-TimeKiller.debug.xcconfig */,
+				D4CBD1CD591DDA609F5AA418 /* Pods-TimeKiller.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EE10BA261DA8C6EC00729076 /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EE10BA271DA8C6EC00729076 /* MeViewController.h */,
+				EE10BA281DA8C6EC00729076 /* MeViewController.m */,
+				EE10BA291DA8C6EC00729076 /* PlanViewController.h */,
+				EE10BA2A1DA8C6EC00729076 /* PlanViewController.m */,
+				EE10BA2B1DA8C6EC00729076 /* RemindViewController.h */,
+				EE10BA2C1DA8C6EC00729076 /* RemindViewController.m */,
+				EE10BA2F1DA8C6EC00729076 /* TimeAnalysisViewController.h */,
+				EE10BA301DA8C6EC00729076 /* TimeAnalysisViewController.m */,
+				EE10BA311DA8C6EC00729076 /* TimeManagerViewController.h */,
+				EE10BA321DA8C6EC00729076 /* TimeManagerViewController.m */,
+				EE10BA2D1DA8C6EC00729076 /* RootTabViewController.h */,
+				EE10BA2E1DA8C6EC00729076 /* RootTabViewController.m */,
+				EE10BA451DA9D77600729076 /* BaseNavigationController.h */,
+				EE10BA461DA9D77600729076 /* BaseNavigationController.m */,
+			);
+			path = RootViewController;
+			sourceTree = "<group>";
+		};
+		EE10BA481DA9E83D00729076 /* ManagerVC */ = {
+			isa = PBXGroup;
+			children = (
+				EE10BA491DA9E83D00729076 /* controller */,
+				EE10BA4A1DA9E83D00729076 /* modle */,
+				EE10BA4B1DA9E83D00729076 /* view */,
+			);
+			name = ManagerVC;
+			path = RemindVC/ManagerVC;
+			sourceTree = "<group>";
+		};
+		EE10BA491DA9E83D00729076 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				EE1B8AA51DACDF9000FF3E79 /* ManagerTimeTagCollection.h */,
+				EE1B8AA61DACDF9000FF3E79 /* ManagerTimeTagCollection.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		EE10BA4A1DA9E83D00729076 /* modle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = modle;
+			sourceTree = "<group>";
+		};
+		EE10BA4B1DA9E83D00729076 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				EE10BA4C1DA9E8C000729076 /* cell */,
+				EE1B8A9F1DAB687D00FF3E79 /* ManagerTableViewHeadView.h */,
+				EE1B8AA01DAB687D00FF3E79 /* ManagerTableViewHeadView.m */,
+				EE1B8AA21DACD9AA00FF3E79 /* ManagerTimeTagView.h */,
+				EE1B8AA31DACD9AA00FF3E79 /* ManagerTimeTagView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		EE10BA4C1DA9E8C000729076 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				EE10BA4D1DA9E91B00729076 /* ManagerRunningCell.h */,
+				EE10BA4E1DA9E91B00729076 /* ManagerRunningCell.m */,
+				EE10BA501DA9E93100729076 /* ManagerCompleteCell.h */,
+				EE10BA511DA9E93100729076 /* ManagerCompleteCell.m */,
+				EE10BA531DA9E95700729076 /* ManagerUndoCell.h */,
+				EE10BA541DA9E95700729076 /* ManagerUndoCell.m */,
+				EE1B8AA81DACE40D00FF3E79 /* CcellManagerTag.h */,
+				EE1B8AA91DACE40D00FF3E79 /* CcellManagerTag.m */,
+			);
+			name = cell;
+			path = TimeKiller/ManagerVC/view/cell;
+			sourceTree = SOURCE_ROOT;
+		};
+		EE1B8AAB1DAE188100FF3E79 /* vender */ = {
+			isa = PBXGroup;
+			children = (
+				EEF01B921DBDA7EB006CA20F /* TZImagePickerController */,
+				EE1B8AAC1DAE188100FF3E79 /* FRDLivelyButton */,
+				EE1B8AAF1DAE188100FF3E79 /* KxMenu */,
+			);
+			path = vender;
+			sourceTree = "<group>";
+		};
+		EE1B8AAC1DAE188100FF3E79 /* FRDLivelyButton */ = {
+			isa = PBXGroup;
+			children = (
+				EE1B8AAD1DAE188100FF3E79 /* FRDLivelyButton.h */,
+				EE1B8AAE1DAE188100FF3E79 /* FRDLivelyButton.m */,
+			);
+			path = FRDLivelyButton;
+			sourceTree = "<group>";
+		};
+		EE1B8AAF1DAE188100FF3E79 /* KxMenu */ = {
+			isa = PBXGroup;
+			children = (
+				EE1B8AB01DAE188100FF3E79 /* KxMenu.h */,
+				EE1B8AB11DAE188100FF3E79 /* KxMenu.m */,
+			);
+			path = KxMenu;
+			sourceTree = "<group>";
+		};
+		EE1B8AB71DAE2AAE00FF3E79 /* PlanVC */ = {
+			isa = PBXGroup;
+			children = (
+				EE1B8AB81DAE2AAE00FF3E79 /* controller */,
+				EE1B8ABB1DAE2AAE00FF3E79 /* modle */,
+				EE1B8ABC1DAE2AAE00FF3E79 /* view */,
+			);
+			name = PlanVC;
+			path = TimeKiller/PlanVC;
+			sourceTree = SOURCE_ROOT;
+		};
+		EE1B8AB81DAE2AAE00FF3E79 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				EE1B8AB91DAE2AAE00FF3E79 /* AddPlanViewController.h */,
+				EE1B8ABA1DAE2AAE00FF3E79 /* AddPlanViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		EE1B8ABB1DAE2AAE00FF3E79 /* modle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = modle;
+			sourceTree = "<group>";
+		};
+		EE1B8ABC1DAE2AAE00FF3E79 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		EE1B8ABE1DAE2B0500FF3E79 /* RemindVC */ = {
+			isa = PBXGroup;
+			children = (
+				EE1B8ABF1DAE2B0500FF3E79 /* controller */,
+				EE1B8AC01DAE2B0500FF3E79 /* model */,
+				EE1B8AC11DAE2B0500FF3E79 /* view */,
+			);
+			name = RemindVC;
+			path = PlanVC/RemindVC;
+			sourceTree = "<group>";
+		};
+		EE1B8ABF1DAE2B0500FF3E79 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		EE1B8AC01DAE2B0500FF3E79 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		EE1B8AC11DAE2B0500FF3E79 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				EE1B8AC51DAE37F100FF3E79 /* RemindCollectionViewCellOne.h */,
+				EE1B8AC61DAE37F100FF3E79 /* RemindCollectionViewCellOne.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		EEF01B921DBDA7EB006CA20F /* TZImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				EEF01B931DBDA7EB006CA20F /* NSBundle+TZImagePicker.h */,
+				EEF01B941DBDA7EB006CA20F /* NSBundle+TZImagePicker.m */,
+				EEF01B951DBDA7EB006CA20F /* TZAssetCell.h */,
+				EEF01B961DBDA7EB006CA20F /* TZAssetCell.m */,
+				EEF01B971DBDA7EB006CA20F /* TZAssetModel.h */,
+				EEF01B981DBDA7EB006CA20F /* TZAssetModel.m */,
+				EEF01B991DBDA7EB006CA20F /* TZImageManager.h */,
+				EEF01B9A1DBDA7EB006CA20F /* TZImageManager.m */,
+				EEF01B9B1DBDA7EB006CA20F /* TZImagePickerController.bundle */,
+				EEF01B9C1DBDA7EB006CA20F /* TZImagePickerController.h */,
+				EEF01B9D1DBDA7EB006CA20F /* TZImagePickerController.m */,
+				EEF01B9E1DBDA7EB006CA20F /* TZPhotoPickerController.h */,
+				EEF01B9F1DBDA7EB006CA20F /* TZPhotoPickerController.m */,
+				EEF01BA01DBDA7EB006CA20F /* TZPhotoPreviewCell.h */,
+				EEF01BA11DBDA7EB006CA20F /* TZPhotoPreviewCell.m */,
+				EEF01BA21DBDA7EB006CA20F /* TZPhotoPreviewController.h */,
+				EEF01BA31DBDA7EB006CA20F /* TZPhotoPreviewController.m */,
+				EEF01BA41DBDA7EB006CA20F /* TZVideoPlayerController.h */,
+				EEF01BA51DBDA7EB006CA20F /* TZVideoPlayerController.m */,
+				EEF01BA61DBDA7EB006CA20F /* UIView+Layout.h */,
+				EEF01BA71DBDA7EB006CA20F /* UIView+Layout.m */,
+			);
+			path = TZImagePickerController;
+			sourceTree = "<group>";
+		};
+		EEF1FC2D1D991CF500C76963 = {
+			isa = PBXGroup;
+			children = (
+				EEF1FC381D991CF500C76963 /* TimeKiller */,
+				EEF1FC521D991CF500C76963 /* TimeKillerTests */,
+				EEF1FC5D1D991CF500C76963 /* TimeKillerUITests */,
+				EEF1FC371D991CF500C76963 /* Products */,
+				A4170AC158D4F2C255380526 /* Pods */,
+				88D589DF5F108CD578C2EF88 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EEF1FC371D991CF500C76963 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEF1FC361D991CF500C76963 /* TimeKiller.app */,
+				EEF1FC4F1D991CF500C76963 /* TimeKillerTests.xctest */,
+				EEF1FC5A1D991CF500C76963 /* TimeKillerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EEF1FC381D991CF500C76963 /* TimeKiller */ = {
+			isa = PBXGroup;
+			children = (
+				EE10BA441DA8F72200729076 /* TimeKiller-Prefix.pch */,
+				EEF1FC3C1D991CF500C76963 /* AppDelegate.h */,
+				EEF1FC3D1D991CF500C76963 /* AppDelegate.m */,
+				EE1B8AAB1DAE188100FF3E79 /* vender */,
+				EE1B8ABE1DAE2B0500FF3E79 /* RemindVC */,
+				EE1B8AB71DAE2AAE00FF3E79 /* PlanVC */,
+				EE10BA481DA9E83D00729076 /* ManagerVC */,
+				EE10BA261DA8C6EC00729076 /* RootViewController */,
+				EEF1FC6C1D99255100C76963 /* Assets.xcassets */,
+				EEF1FC471D991CF500C76963 /* LaunchScreen.storyboard */,
+				EEF1FC4A1D991CF500C76963 /* Info.plist */,
+				EEF1FC391D991CF500C76963 /* Supporting Files */,
+			);
+			path = TimeKiller;
+			sourceTree = "<group>";
+		};
+		EEF1FC391D991CF500C76963 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EEF1FC3A1D991CF500C76963 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EEF1FC521D991CF500C76963 /* TimeKillerTests */ = {
+			isa = PBXGroup;
+			children = (
+				EEF1FC531D991CF500C76963 /* TimeKillerTests.m */,
+				EEF1FC551D991CF500C76963 /* Info.plist */,
+			);
+			path = TimeKillerTests;
+			sourceTree = "<group>";
+		};
+		EEF1FC5D1D991CF500C76963 /* TimeKillerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EEF1FC5E1D991CF500C76963 /* TimeKillerUITests.m */,
+				EEF1FC601D991CF500C76963 /* Info.plist */,
+			);
+			path = TimeKillerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EEF1FC351D991CF500C76963 /* TimeKiller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEF1FC631D991CF500C76963 /* Build configuration list for PBXNativeTarget "TimeKiller" */;
+			buildPhases = (
+				53D7D68438420FB53A1E8C41 /* [CP] Check Pods Manifest.lock */,
+				EEF1FC321D991CF500C76963 /* Sources */,
+				EEF1FC331D991CF500C76963 /* Frameworks */,
+				EEF1FC341D991CF500C76963 /* Resources */,
+				0CCCFB62423C8AF2D9ECB7E1 /* [CP] Embed Pods Frameworks */,
+				91ED324C694C16440540BC28 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeKiller;
+			productName = TimeKiller;
+			productReference = EEF1FC361D991CF500C76963 /* TimeKiller.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EEF1FC4E1D991CF500C76963 /* TimeKillerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEF1FC661D991CF500C76963 /* Build configuration list for PBXNativeTarget "TimeKillerTests" */;
+			buildPhases = (
+				EEF1FC4B1D991CF500C76963 /* Sources */,
+				EEF1FC4C1D991CF500C76963 /* Frameworks */,
+				EEF1FC4D1D991CF500C76963 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEF1FC511D991CF500C76963 /* PBXTargetDependency */,
+			);
+			name = TimeKillerTests;
+			productName = TimeKillerTests;
+			productReference = EEF1FC4F1D991CF500C76963 /* TimeKillerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EEF1FC591D991CF500C76963 /* TimeKillerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEF1FC691D991CF500C76963 /* Build configuration list for PBXNativeTarget "TimeKillerUITests" */;
+			buildPhases = (
+				EEF1FC561D991CF500C76963 /* Sources */,
+				EEF1FC571D991CF500C76963 /* Frameworks */,
+				EEF1FC581D991CF500C76963 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEF1FC5C1D991CF500C76963 /* PBXTargetDependency */,
+			);
+			name = TimeKillerUITests;
+			productName = TimeKillerUITests;
+			productReference = EEF1FC5A1D991CF500C76963 /* TimeKillerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EEF1FC2E1D991CF500C76963 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "李明航";
+				TargetAttributes = {
+					EEF1FC351D991CF500C76963 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 4QGB535X3S;
+					};
+					EEF1FC4E1D991CF500C76963 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = EEF1FC351D991CF500C76963;
+					};
+					EEF1FC591D991CF500C76963 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = EEF1FC351D991CF500C76963;
+					};
+				};
+			};
+			buildConfigurationList = EEF1FC311D991CF500C76963 /* Build configuration list for PBXProject "TimeKiller" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EEF1FC2D1D991CF500C76963;
+			productRefGroup = EEF1FC371D991CF500C76963 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEF1FC351D991CF500C76963 /* TimeKiller */,
+				EEF1FC4E1D991CF500C76963 /* TimeKillerTests */,
+				EEF1FC591D991CF500C76963 /* TimeKillerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EEF1FC341D991CF500C76963 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEF01BAC1DBDA7EB006CA20F /* TZImagePickerController.bundle in Resources */,
+				EEF1FC6D1D99255100C76963 /* Assets.xcassets in Resources */,
+				EEF1FC491D991CF500C76963 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEF1FC4D1D991CF500C76963 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEF1FC581D991CF500C76963 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CCCFB62423C8AF2D9ECB7E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimeKiller/Pods-TimeKiller-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53D7D68438420FB53A1E8C41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		91ED324C694C16440540BC28 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimeKiller/Pods-TimeKiller-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EEF1FC321D991CF500C76963 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE10BA361DA8C6EC00729076 /* RootTabViewController.m in Sources */,
+				EE10BA331DA8C6EC00729076 /* MeViewController.m in Sources */,
+				EEF01BAA1DBDA7EB006CA20F /* TZAssetModel.m in Sources */,
+				EEF01BB11DBDA7EB006CA20F /* TZVideoPlayerController.m in Sources */,
+				EEF01BA91DBDA7EB006CA20F /* TZAssetCell.m in Sources */,
+				EE1B8AAA1DACE40D00FF3E79 /* CcellManagerTag.m in Sources */,
+				EEF01BA81DBDA7EB006CA20F /* NSBundle+TZImagePicker.m in Sources */,
+				EE10BA351DA8C6EC00729076 /* RemindViewController.m in Sources */,
+				EEF01BB21DBDA7EB006CA20F /* UIView+Layout.m in Sources */,
+				EEF01BAB1DBDA7EB006CA20F /* TZImageManager.m in Sources */,
+				EE1B8AC71DAE37F100FF3E79 /* RemindCollectionViewCellOne.m in Sources */,
+				EEF01BAD1DBDA7EB006CA20F /* TZImagePickerController.m in Sources */,
+				EEF01BAE1DBDA7EB006CA20F /* TZPhotoPickerController.m in Sources */,
+				EE1B8AB31DAE188100FF3E79 /* KxMenu.m in Sources */,
+				EE10BA371DA8C6EC00729076 /* TimeAnalysisViewController.m in Sources */,
+				EE10BA471DA9D77600729076 /* BaseNavigationController.m in Sources */,
+				EE10BA341DA8C6EC00729076 /* PlanViewController.m in Sources */,
+				EEF01BB01DBDA7EB006CA20F /* TZPhotoPreviewController.m in Sources */,
+				EE1B8AA41DACD9AA00FF3E79 /* ManagerTimeTagView.m in Sources */,
+				EE1B8AA71DACDF9000FF3E79 /* ManagerTimeTagCollection.m in Sources */,
+				EEF1FC3E1D991CF500C76963 /* AppDelegate.m in Sources */,
+				EE1B8ABD1DAE2AAE00FF3E79 /* AddPlanViewController.m in Sources */,
+				EE1B8AB21DAE188100FF3E79 /* FRDLivelyButton.m in Sources */,
+				EE10BA521DA9E93100729076 /* ManagerCompleteCell.m in Sources */,
+				EEF01BAF1DBDA7EB006CA20F /* TZPhotoPreviewCell.m in Sources */,
+				EEF1FC3B1D991CF500C76963 /* main.m in Sources */,
+				EE10BA551DA9E95700729076 /* ManagerUndoCell.m in Sources */,
+				EE10BA4F1DA9E91B00729076 /* ManagerRunningCell.m in Sources */,
+				EE1B8AA11DAB687D00FF3E79 /* ManagerTableViewHeadView.m in Sources */,
+				EE10BA381DA8C6EC00729076 /* TimeManagerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEF1FC4B1D991CF500C76963 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEF1FC541D991CF500C76963 /* TimeKillerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEF1FC561D991CF500C76963 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEF1FC5F1D991CF500C76963 /* TimeKillerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EEF1FC511D991CF500C76963 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEF1FC351D991CF500C76963 /* TimeKiller */;
+			targetProxy = EEF1FC501D991CF500C76963 /* PBXContainerItemProxy */;
+		};
+		EEF1FC5C1D991CF500C76963 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEF1FC351D991CF500C76963 /* TimeKiller */;
+			targetProxy = EEF1FC5B1D991CF500C76963 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EEF1FC471D991CF500C76963 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEF1FC481D991CF500C76963 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EEF1FC611D991CF500C76963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EEF1FC621D991CF500C76963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EEF1FC641D991CF500C76963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC4C14478E83595056E04E22 /* Pods-TimeKiller.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4QGB535X3S;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TimeKiller/TimeKiller-prefix.pch";
+				INFOPLIST_FILE = TimeKiller/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demoJacob;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EEF1FC651D991CF500C76963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4CBD1CD591DDA609F5AA418 /* Pods-TimeKiller.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4QGB535X3S;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TimeKiller/TimeKiller-prefix.pch";
+				INFOPLIST_FILE = TimeKiller/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demoJacob;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EEF1FC671D991CF500C76963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TimeKillerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.jacob.com.TimeKillerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeKiller.app/TimeKiller";
+			};
+			name = Debug;
+		};
+		EEF1FC681D991CF500C76963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TimeKillerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.jacob.com.TimeKillerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeKiller.app/TimeKiller";
+			};
+			name = Release;
+		};
+		EEF1FC6A1D991CF500C76963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TimeKillerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.jacob.com.TimeKillerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TimeKiller;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EEF1FC6B1D991CF500C76963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TimeKillerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.jacob.com.TimeKillerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TimeKiller;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EEF1FC311D991CF500C76963 /* Build configuration list for PBXProject "TimeKiller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEF1FC611D991CF500C76963 /* Debug */,
+				EEF1FC621D991CF500C76963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEF1FC631D991CF500C76963 /* Build configuration list for PBXNativeTarget "TimeKiller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEF1FC641D991CF500C76963 /* Debug */,
+				EEF1FC651D991CF500C76963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEF1FC661D991CF500C76963 /* Build configuration list for PBXNativeTarget "TimeKillerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEF1FC671D991CF500C76963 /* Debug */,
+				EEF1FC681D991CF500C76963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEF1FC691D991CF500C76963 /* Build configuration list for PBXNativeTarget "TimeKillerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEF1FC6A1D991CF500C76963 /* Debug */,
+				EEF1FC6B1D991CF500C76963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EEF1FC2E1D991CF500C76963 /* Project object */;
+}
