@@ -38,14 +38,9 @@ static NSString *const KCellIdentifier_ManagerUndoCell = @"ManagerUndoCell";
 @property (assign,nonatomic)BOOL startOrStop;
 
 //程序进入后台时间
-@property (nonatomic,assign)int backgroundTimeSS;
-@property (nonatomic,assign)int backgroundTimeMM;
-@property (nonatomic,assign)int backgroundTimeHH;
+@property (nonatomic, strong) NSDate *backgroundTimeDate;
 
 //前后台时间差
-@property (nonatomic,assign)int finialSS;
-@property (nonatomic,assign)int finialMM;
-@property (nonatomic,assign)int finialHH;
 
 //进入前台后最终显示的时间
 @property (nonatomic,assign)int SS;
@@ -73,69 +68,23 @@ static NSString *const KCellIdentifier_ManagerUndoCell = @"ManagerUndoCell";
 
 - (void)goToBackground
 {
-    NSDateFormatter *formatter=[[NSDateFormatter alloc]init];
-    [formatter setLocale:[NSLocale currentLocale]];
-    [formatter setDateFormat:@"yyMMddHHmmss"];
-    NSString *currentTimeStr = [formatter stringFromDate:[NSDate date]];
-    self.backgroundTimeHH = [[currentTimeStr substringWithRange:(NSRange){6,2}] intValue];
-    self.backgroundTimeMM = [[currentTimeStr substringWithRange:(NSRange){8,2}] intValue];
-    self.backgroundTimeSS = [[currentTimeStr substringWithRange:(NSRange){10,2}] intValue];
+    self.backgroundTimeDate = [NSDate date];
 }
 
 - (void)goToFont
 {
-    NSDateFormatter *formatter=[[NSDateFormatter alloc]init];
-    [formatter setLocale:[NSLocale currentLocale]];
-    [formatter setDateFormat:@"yyMMddHHmmss"];
-    NSString *currentTimeStr = [formatter stringFromDate:[NSDate date]];
-    int lastTimeHH = [[currentTimeStr substringWithRange:(NSRange){6,2}] intValue];
-    int lastTimeMM = [[currentTimeStr substringWithRange:(NSRange){8,2}] intValue];
-    int lastTimeSS = [[currentTimeStr substringWithRange:(NSRange){10,2}] intValue];
-
-    //进入后台和前台的时间差
-    if(lastTimeSS < self.backgroundTimeSS){
-        self.finialSS = lastTimeSS + 60 - self.backgroundTimeSS;
-        lastTimeMM = lastTimeMM - 1;
-        if(lastTimeMM < self.backgroundTimeMM){
-            self.finialMM = lastTimeMM + 60 - self.backgroundTimeMM;
-            lastTimeHH = lastTimeHH - 1;
-            self.finialHH = lastTimeHH - self.backgroundTimeHH;
-        }else{
-            self.finialMM = lastTimeMM - self.backgroundTimeMM;
-            self.finialHH = lastTimeHH - self.backgroundTimeHH;
-        }
-    }else{
-        if(lastTimeMM < self.backgroundTimeMM){
-            self.finialSS = lastTimeSS - self.backgroundTimeSS;
-            self.finialMM = lastTimeMM + 60 - self.backgroundTimeMM;
-            lastTimeHH = lastTimeHH - 1;
-            self.finialHH = lastTimeHH - self.backgroundTimeHH;
-        }else{
-            self.finialHH = lastTimeHH - self.backgroundTimeHH;
-            self.finialMM = lastTimeMM - self.backgroundTimeMM;
-            self.finialSS = lastTimeSS - self.backgroundTimeSS;
-        }
-    }
+    NSDate *fontDate = [NSDate date];
+    NSTimeInterval distanceBetweenDates = [fontDate timeIntervalSinceDate:self.backgroundTimeDate];
+    double second = 1;
+    NSInteger hoursBetweenDates = distanceBetweenDates / second;
     
-    _SS = self.finialSS + _timeI;
-    if(_SS < 60){
-        _MM = self.finialMM + _timeMinute;
-        if(_MM < 60){
-            _HH = self.finialHH + _timeHour;
-        }else{
-            _MM = _MM - 60;
-            _HH = self.finialHH + _timeHour + 1;
-        }
-    }else{
-        _SS = _SS - 60;
-        _MM = self.finialMM + _timeMinute + 1;
-        if(_MM < 60){
-            _HH = self.finialHH + _timeHour;
-        }else{
-            _MM = _MM - 60;
-            _HH = self.finialHH + _timeHour + 1;
-        }
-    }
+    NSInteger currentShowTiem = _timeHour * 3600 + _timeMinute * 60 + _timeI - 3;
+    NSInteger totalShowTime = currentShowTiem + hoursBetweenDates;
+    self.HH = totalShowTime / 3600;
+    totalShowTime = totalShowTime - 3600 * self.HH;
+    self.MM = totalShowTime / 60;
+    totalShowTime = totalShowTime - 60 * self.MM;
+    self.SS = totalShowTime;
     //进入前台后刷新int时间，刷新label数据
     if(_startOrStop){
         //在启动的状态下刷新时间显示
